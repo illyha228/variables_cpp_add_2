@@ -4,16 +4,24 @@ using namespace std;
 
 int main() {
 
-	int grn, kop;
-	cout << "Enter sum in grn";
-	cin >> grn;
-	cout << "Enter sum in kop";
-	cin >> kop;
+	double lenght, wight, height;
 
-	grn += kop / 100;
-	kop = kop % 100;
+	cout << "calculation of the parallelogram" << endl;
+	cout << "Enter" << endl;
 
-	cout << "Suma: " << grn << " grn " << kop << "kop" << endl;
+	cout << "lenght sm : ";
+	cin >> lenght;
+
+	cout << "wight sm : ";
+	cin >> wight;
+
+	cout << "height sm : ";
+	cin >> height;
+
+	double sum = lenght * wight * height;
+
+	cout << "All suma = " << sum<< endl;
+
 
 	return 0;
 }
