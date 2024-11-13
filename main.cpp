@@ -4,23 +4,20 @@ using namespace std;
 
 int main() {
 
-	double lenght, wight, height;
+	double scale, distant;
 
-	cout << "calculation of the parallelogram" << endl;
-	cout << "Enter" << endl;
+	cout << "Kakulation vidstani" << endl;
+	cout << "Enter:  " << endl;
 
-	cout << "lenght sm : ";
-	cin >> lenght;
+	cout << "Map distance " << endl;
+	cin >> scale;
 
-	cout << "wight sm : ";
-	cin >> wight;
-
-	cout << "height sm : ";
-	cin >> height;
-
-	double sum = lenght * wight * height;
-
-	cout << "All suma = " << sum<< endl;
+	cout << "Vidstan miz tochkami" << endl;
+	cin >> distant;
+	 
+	double alldistant = scale * distant;
+	
+	cout << "Vidstan miz = " << alldistant << "km" << endl;
 
 
 	return 0;
