@@ -10,20 +10,12 @@ int main() {
 	cout << "Vvedit chas v sec";
 	cin >> all;
 
-	int hours = all / 3600;
-	int min = (all % 3600) / 60;
-	int sec = all % 60;
+	const int work = 8 * 3600;
+	int abg = max(work - all, 0);
 
-	cout << hours << " : " << min << " : " << sec << endl;
+	int left_time = max(abg / 3600, 0);
 
-	int day = 24 * 3600;
-	int mid = day - all;
-
-	hours = mid / 3600;
-	min = (mid % 3600) / 60;
-	sec = mid % 60;
-
-	cout << hours << " : " << min << " : " << sec << endl;
+	cout << "zalishilos: " << left_time << "hours" << endl;
 
 	return 0;
 }
