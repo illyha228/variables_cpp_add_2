@@ -4,11 +4,16 @@ using namespace std;
 
 int main() {
 
-	int year;
-	cout << "Enter a year: ";
-	cin >> year;
-	int days = 365 + (year % 4 == 0 && year % 100 != 0 || year %  400 == 0);
-	cout << "the Number of days in the year" << year << " is " << days << endl;
+	int grn, kop;
+	cout << "Enter sum in grn";
+	cin >> grn;
+	cout << "Enter sum in kop";
+	cin >> kop;
+
+	grn += kop / 100;
+	kop = kop % 100;
+
+	cout << "Suma: " << grn << " grn " << kop << "kop" << endl;
 
 	return 0;
 }
