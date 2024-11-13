@@ -5,14 +5,25 @@ using namespace std;
 
 int main() {
 
-	double radius;
+	int all;
 
-	cout << "Vvedit radius kuli = ";
-	cin >> radius;
+	cout << "Vvedit chas v sec";
+	cin >> all;
 
-	double ar = (4.0 / 3.0) * M_PI * (radius, 3);
+	int hours = all / 3600;
+	int min = (all % 3600) / 60;
+	int sec = all % 60;
 
-	cout << "Obem kuli: " << ar << endl;
+	cout << hours << " : " << min << " : " << sec << endl;
+
+	int day = 24 * 3600;
+	int mid = day - all;
+
+	hours = mid / 3600;
+	min = (mid % 3600) / 60;
+	sec = mid % 60;
+
+	cout << hours << " : " << min << " : " << sec << endl;
 
 	return 0;
 }
